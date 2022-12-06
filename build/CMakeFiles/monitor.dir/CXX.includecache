@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+../include/format.h
+string
+-
+
 ../include/linux_parser.h
 fstream
 -
@@ -14,7 +18,37 @@ regex
 string
 -
 
-/home/marwan/C++ Projects/CppND-System-Monitor-Project-Updated/src/linux_parser.cpp
+../include/ncurses_display.h
+curses.h
+-
+process.h
+../include/process.h
+system.h
+../include/system.h
+
+../include/process.h
+string
+-
+
+../include/processor.h
+
+../include/system.h
+string
+-
+vector
+-
+process.h
+../include/process.h
+processor.h
+../include/processor.h
+
+/home/marwan/C++ Projects/Monitor-System-Cpp/monitor-system/src/format.cpp
+string
+-
+format.h
+/home/marwan/C++ Projects/Monitor-System-Cpp/monitor-system/src/format.h
+
+/home/marwan/C++ Projects/Monitor-System-Cpp/monitor-system/src/linux_parser.cpp
 dirent.h
 -
 unistd.h
@@ -24,5 +58,71 @@ string
 vector
 -
 linux_parser.h
-/home/marwan/C++ Projects/CppND-System-Monitor-Project-Updated/src/linux_parser.h
+/home/marwan/C++ Projects/Monitor-System-Cpp/monitor-system/src/linux_parser.h
+
+/home/marwan/C++ Projects/Monitor-System-Cpp/monitor-system/src/main.cpp
+ncurses_display.h
+/home/marwan/C++ Projects/Monitor-System-Cpp/monitor-system/src/ncurses_display.h
+system.h
+/home/marwan/C++ Projects/Monitor-System-Cpp/monitor-system/src/system.h
+
+/home/marwan/C++ Projects/Monitor-System-Cpp/monitor-system/src/ncurses_display.cpp
+curses.h
+-
+chrono
+-
+string
+-
+thread
+-
+vector
+-
+format.h
+/home/marwan/C++ Projects/Monitor-System-Cpp/monitor-system/src/format.h
+ncurses_display.h
+/home/marwan/C++ Projects/Monitor-System-Cpp/monitor-system/src/ncurses_display.h
+system.h
+/home/marwan/C++ Projects/Monitor-System-Cpp/monitor-system/src/system.h
+
+/home/marwan/C++ Projects/Monitor-System-Cpp/monitor-system/src/process.cpp
+unistd.h
+-
+cctype
+-
+sstream
+-
+string
+-
+vector
+-
+process.h
+/home/marwan/C++ Projects/Monitor-System-Cpp/monitor-system/src/process.h
+linux_parser.h
+/home/marwan/C++ Projects/Monitor-System-Cpp/monitor-system/src/linux_parser.h
+
+/home/marwan/C++ Projects/Monitor-System-Cpp/monitor-system/src/processor.cpp
+processor.h
+/home/marwan/C++ Projects/Monitor-System-Cpp/monitor-system/src/processor.h
+linux_parser.h
+/home/marwan/C++ Projects/Monitor-System-Cpp/monitor-system/src/linux_parser.h
+
+/home/marwan/C++ Projects/Monitor-System-Cpp/monitor-system/src/system.cpp
+unistd.h
+-
+cstddef
+-
+set
+-
+string
+-
+vector
+-
+process.h
+/home/marwan/C++ Projects/Monitor-System-Cpp/monitor-system/src/process.h
+processor.h
+/home/marwan/C++ Projects/Monitor-System-Cpp/monitor-system/src/processor.h
+system.h
+/home/marwan/C++ Projects/Monitor-System-Cpp/monitor-system/src/system.h
+linux_parser.h
+/home/marwan/C++ Projects/Monitor-System-Cpp/monitor-system/src/linux_parser.h
 
