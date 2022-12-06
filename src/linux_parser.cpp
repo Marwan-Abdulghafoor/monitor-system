@@ -118,7 +118,7 @@ float LinuxParser::CpuUtilization() {
   float output;
   string value;
   float seconds, totalTime;
-  std::string line, cpu;
+  std::string line;
   float uTime, sTime, cuTime, csTime, startTime;
   long uptime = LinuxParser::UpTime();
   std::ifstream filestream(kProcDirectory + "/" + std::to_string(process_id) + kStatFilename);
@@ -247,7 +247,6 @@ string LinuxParser::User(int pid) {
 long LinuxParser::UpTime(int pid) { 
   std::string line, value;
   long time;
-  // long uptime = LinuxParser::UpTime();
   std::ifstream filestream(kProcDirectory + std::to_string(pid) + kStatFilename);
   if (filestream.is_open()) {
     while (std::getline(filestream, line)) {
